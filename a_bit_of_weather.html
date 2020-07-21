@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='style.css'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='java/java.js'></script>
+    <style>
+          .system-fonts {
+              font-family: sans-serif;
+            }
+    </style>
+    <title>A Bit of Weather</title>
+  </head>
+
+  <body class='background'>
+
+    <header>
+      <input type='text' id='cityName' placeholder='City Name e.g. London, UK'>
+        <button onclick='getWeather()'>GO!</button>
+    </header>
+
+    <section class='data'>
+      <div id='mainData'>
+          <a class='name' id='city-name'></a><br>
+          <a class='tempGl' id='tempGlobal'></a>
+      </div>
+      <div class='firstD'>
+        <div>Temperatura Min:</div><div id='tempMin'></div>
+      </div>
+      <div class='secondD'>
+        <div>Temperatura Max:</div><div id='tempMax'></div>
+      </div>
+      <div class='thirdD'>
+        <div>Umidità:</div><div id='hum'></div>
+      </div>
+      <div id='desc'></div>
+    </section>
+
+    </body>
+
+</html>
